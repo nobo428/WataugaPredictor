@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Watauga River Level Predictor</title>{% endblock %}
+  <style>
+    h1 {
+        font-family:tahoma;
+    }
+
+    h4 {
+        font-family:tahoma;
+    }
+
+    h3 {
+        font-family:verdana;
+    }
+
+    p {
+        font-family:tahoma;
+    }
+
+    img {
+        border: 5px solid #000;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .center2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80%;
+    }
+
+  </style>
+</head>
+<body style="background-color: #EBEBEB;">
+  {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+  {% block content %}
+  <h1 align="center">Watauga River Level Predictor</h1>
+  <h4 align="center">Created by Noah Bodin</h4>
+  <p align="center" class="center">This site uses a Neural Network in coordination with the weather forecast to generate a 10-day prediction
+  of levels (daily average) to expect on the Watauga River Gorge. Sections III and IV are the primary targets of this site.</p>
+  <h3 align="center">Updates daily at 8:00am Eastern Time.</h3>
+
+  {% load static %} <img src="{% static "graphs/forecast.png" %}?v={% now 'U' %}" alt="home" class="center2"/>
+
+  {% endblock %}
+</body>
+</html>
