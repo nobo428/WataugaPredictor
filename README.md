@@ -32,8 +32,8 @@ Using the Program
 Contribution
 ----------
  
-- __Issue Tracker:__ https://github.com/nobo428/TaugPredictor/issues
-- __Source Code:__ https://github.com/nobo428/TaugPredictor
+- __Issue Tracker:__ https://github.com/nobo428/WataugaPredictor/issues
+- __Source Code:__ https://github.com/nobo428/WataugaPredictor
  
 Support / Troubleshooting
 -------
